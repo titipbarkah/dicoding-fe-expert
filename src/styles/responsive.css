@@ -47,7 +47,16 @@
   #menu-btn {
     display: inline-block;
     cursor: pointer;
-    font-size: 44px;
+    width: 44px;
+    height: 44px;
+    color: orange;
+    padding-left: 6px;
+    padding-top: 6px;
+  }
+
+  svg {
+    height: 30px;
+    width: 30px;
   }
 
   .header .navbar a {
@@ -73,8 +82,12 @@
   }
 
   .hero .content h3 {
-    font-size: 4rem;
-    margin-top: 2rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  .hero .content p {
+    font-size: 1.4rem;
   }
 
   .hero .content button {
@@ -88,6 +101,7 @@
 }
 
 @media screen and (max-width: 350px) {
+  
   .header .logo {
     font-size: 2.6rem;
   }
@@ -98,11 +112,12 @@
 
   .hero .content h3 {
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: 7rem;
+
   }
 
   .hero .content p {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   .hero .content button {
@@ -110,10 +125,10 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 480px) {
   .hero {
-    width: 100%;
-    background-image: url(../public/images/resize/hero-image_2-large.jpg);
+    background-image: url(../public/images/resize/hero-image_3-small.jpg);
+    padding: 10px;
   }
 }
 
@@ -123,8 +138,9 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 800px) {
   .hero {
-    background-image: url(../public/images/resize/hero-image_2-small.jpg);
+    width: 100%;
+    background-image: url(../public/images/resize/hero-image_2-large.jpg);
   }
 }
