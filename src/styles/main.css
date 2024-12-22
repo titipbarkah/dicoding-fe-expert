@@ -87,6 +87,13 @@ button:hover {
   padding: -1 44px;
 }
 
+.header .logo svg {
+  width: 3rem;
+  height: 3rem;
+  padding-top: 3px;
+  color: var(--orange);
+}
+
 .header .logo span {
   color: #ff7800;
 }
@@ -217,6 +224,7 @@ button:hover {
 
 .box img {
   width: 100%;
+  height: auto;
   margin-top: 1rem;
 }
 

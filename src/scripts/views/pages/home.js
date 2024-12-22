@@ -43,7 +43,6 @@ const Home = {
         // Fungsi ini akan dipanggil setelah render()
         const APP_RESTAURANTS = await restaurantDbSource.homeRestaurants();
         const menusContainer = document.querySelector('.box-container');
-        console.log(APP_RESTAURANTS);
         APP_RESTAURANTS.forEach((menu) => {
             menusContainer.innerHTML += createMenuTemplate(menu);
         });
