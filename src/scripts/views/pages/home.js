@@ -15,6 +15,7 @@ const Home = {
                 reiciendis ipsam fugiat praesentium, porro accusantium tempora commodi
                 ipsa. Consequuntur illo corrupti ipsam obcaecati voluptas quos sunt
                 omnis quo aperiam corporis.
+
                 </p>
             </div>
             </section>
