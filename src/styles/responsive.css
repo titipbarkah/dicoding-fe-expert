@@ -1,127 +1,130 @@
 @media screen and (max-width: 1024px) {
-    html {
-      font-size: 55%;
-    }
-  
-    .header {
-      padding: 3rem 5%;
-    }
-  
-    .header .logo {
-      font-size: 3rem;
-    }
-  
-    .hero {
-      width: 100%;
-      background: url(../public/images/resize/hero-image_2-large.jpg) no-repeat;
-    }
-  
-    section {
-      padding: 2rem 5%;
-    }
-  
-    .hero .content button {
-      font-size: 3rem;
-    }
+  html {
+    font-size: 55%;
   }
-  
-  @media screen and (max-width: 800px) {
-    header {
-      padding: 2rem;
-    }
-  
-    .header .logo {
-      font-size: 3rem;
-    }
-  
-    .header .navbar {
-      position: absolute;
-      top: 110%;
-      right: -110%;
-      width: 30rem;
-      box-shadow: var(--box-shadow);
-      border-radius: 0.5rem;
-      background: #fff;
-    }
-  
-    .header .navbar.active {
-      right: 2rem;
-      transition: 0.4s linear;
-    }
-  
-    .hero {
-      width: 100%;
-      background: url(../public/images/resize/hero-image_2-large.jpg) no-repeat;
-    }
-  
-    #menu-btn {
-      display: inline-block;
-      cursor: pointer;
-      font-size: 44px;
-    }
-  
-    .header .navbar a {
-      font-size: 2rem;
-      margin: 2rem 2.5rem;
-      padding: 44px;
-      display: grid;
-    }
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
+
+  .header {
+    padding: 3rem 5%;
   }
-  
-  @media screen and (max-width: 400px) {
-    .header .logo {
-      font-size: 3rem;
-      line-height: 2;
-    }
-  
-    .header .logo i {
-      display: none;
-    }
-  
-    .hero .content h3 {
-      font-size: 4rem;
-      margin-top: 2rem;
-    }
-  
-    .hero .content button {
-      font-size: 3rem;
-    }
-  
-    .hero {
-      width: 100%;
-      background: url(../public/images/resize/hero-image_2-large.jpg) no-repeat;
-    }
+
+  .header .logo {
+    font-size: 3rem;
   }
-  
-  @media screen and (max-width: 350px) {
-    .header .logo {
-      font-size: 2.6rem;
-    }
-  
-    .header .logo i {
-      display: none;
-    }
-  
-    .hero .content h3 {
-      font-size: 3rem;
-      margin-top: 2rem;
-    }
-  
-    .hero .content p {
-      font-size: 1.8rem;
-    }
-  
-    .hero .content button {
-      font-size: 3rem;
-    }
-  
-    .hero {
-      width: 100%;
-      background: url(../public/images/resize/hero-image_2-medium.jpg) no-repeat;
-    }
+
+  section {
+    padding: 2rem 5%;
   }
-  
+
+  .hero .content button {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 2rem;
+  }
+
+  .header .logo {
+    font-size: 3rem;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 44px;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    padding: 44px;
+    display: grid;
+  }
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .logo {
+    font-size: 3rem;
+    line-height: 2;
+  }
+
+  .header .logo i {
+    display: none;
+  }
+
+  .hero .content h3 {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .hero .content button {
+    font-size: 3rem;
+  }
+
+  .hero {
+    width: 100%;
+    background: url(../public/images/resize/hero-image_2-small.jpg) no-repeat;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header .logo {
+    font-size: 2.6rem;
+  }
+
+  .header .logo i {
+    display: none;
+  }
+
+  .hero .content h3 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .hero .content p {
+    font-size: 1.8rem;
+  }
+
+  .hero .content button {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    width: 100%;
+    background-image: url(../public/images/resize/hero-image_2-large.jpg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    background-image: url(../public/images/resize/hero-image_2-medium.jpg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: url(../public/images/resize/hero-image_2-small.jpg);
+  }
+}
