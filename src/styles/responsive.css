@@ -59,12 +59,19 @@
     width: 30px;
   }
 
+  .hero .content h3 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    padding: 4rem;
+  }
+
   .header .navbar a {
     font-size: 2rem;
     margin: 2rem 2.5rem;
     padding: 44px;
     display: grid;
   }
+
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -134,13 +141,19 @@
 
 @media screen and (max-width: 800px) {
   .hero {
+    margin-top: 106px;
+    height: 225px;
     background-image: url(../public/images/resize/hero-image_2-medium.jpg);
+  }
+
+  .hero .content,
+  .hero.content h3 {
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 800px) {
   .hero {
-    width: 100%;
     background-image: url(../public/images/resize/hero-image_2-large.jpg);
   }
 }
