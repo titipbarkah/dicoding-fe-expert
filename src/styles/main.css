@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./font/Poppins-Bold.ttf') format('ttf'),
+       url('./font/Poppins-Regular.ttf') format('ttf');
+}
+
 :root {
   --orange: #ff7800;
   --black: #0d0d0d;
