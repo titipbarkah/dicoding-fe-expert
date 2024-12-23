@@ -6,6 +6,11 @@ const Home = {
     async render() {
         return `
             <section class="hero" id="hero">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./public/images/heros/hero-image_2-small.webp">
+                    <source media="(max-width: 800px)" srcset="./public/images/heros/hero-image_2-medium.webp">
+                    <img src="./public/images/heros/hero-image_2-large.webp" alt="">
+                </picture>
                 <div class="content">
                     <h3>
                         Nikmati Setiap <span>Gigitan</span> , Rasakan <span>Kebahagiaan</span>
@@ -30,8 +35,8 @@ const Home = {
 
     async afterRender() {
         setTimeout(() => {
-        this.loadingIndicator = document.querySelector('.loader')
-        this._showLoading()
+            this.loadingIndicator = document.querySelector('.loader')
+            this._showLoading()
         , 3000})
 
         // Fungsi ini akan dipanggil setelah render()

@@ -62,7 +62,6 @@
   .hero .content h3 {
     font-size: 4rem;
     line-height: 5.2rem;
-    padding: 4rem;
   }
 
   .header .navbar a {
@@ -90,7 +89,6 @@
 
   .hero .content h3 {
     font-size: 3rem;
-    margin-top: 3rem;
   }
 
   .hero .content p {
@@ -100,15 +98,9 @@
   .hero .content button {
     font-size: 3rem;
   }
-
-  .hero {
-    width: 100%;
-    background: url(../public/images/resize/hero-image_2-small.jpg) no-repeat;
-  }
 }
 
 @media screen and (max-width: 350px) {
-  
   .header .logo {
     font-size: 2.6rem;
   }
@@ -119,8 +111,6 @@
 
   .hero .content h3 {
     font-size: 3rem;
-    margin-top: 7rem;
-
   }
 
   .hero .content p {
@@ -129,31 +119,5 @@
 
   .hero .content button {
     font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero {
-    background-image: url(../public/images/resize/hero-image_3-small.jpg);
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .hero {
-    margin-top: 106px;
-    height: 225px;
-    background-image: url(../public/images/resize/hero-image_2-medium.jpg);
-  }
-
-  .hero .content,
-  .hero.content h3 {
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .hero {
-    background-image: url(../public/images/resize/hero-image_2-large.jpg);
   }
 }

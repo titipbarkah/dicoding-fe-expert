@@ -66,7 +66,6 @@ module.exports = {
                 },
             ],
         }),
-
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
