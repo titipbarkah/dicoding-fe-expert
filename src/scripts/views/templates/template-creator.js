@@ -3,7 +3,11 @@
 const createMenuTemplate = (menu) => `
         <div class="box">
           <div class="box__city">${menu.city}</div>
-          <img class="lazyload" data-src="https://restaurant-api.dicoding.dev/images/medium/${menu.pictureId}" alt="gambar ${menu.name} ">
+          <picture>
+              <source class="lazyload"  media="(max-width: 500px)" data-srcset="https://restaurant-api.dicoding.dev/images/small/${menu.pictureId}">
+              <source class="lazyload" media="(max-width: 800px)" data-srcset="https://restaurant-api.dicoding.dev/images/medium/${menu.pictureId}">
+              <img class="lazyload" data-src="https://restaurant-api.dicoding.dev/images/large/${menu.pictureId}" alt="gambar ${menu.name}">
+          </picture>
           <div class="box__rating">Rating : <i class="fa-solid fa-star" aria-hidden="true"></i>${menu.rating}</div>
           <div class="box__title"><a href="#/detail/${menu.id}">${menu.name}</a></div>
           <div class="box_description">${menu.description.slice(0, 100)}</div>
