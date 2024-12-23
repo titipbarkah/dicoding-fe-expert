@@ -6,20 +6,13 @@ const Home = {
     async render() {
         return `
             <section class="hero" id="hero">
-            <div class="content">
-                <h3>
-                Nikmati Setiap <span>Gigitan</span> , Rasakan <span>Kebahagiaan</span>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                reiciendis ipsam fugiat praesentium, porro accusantium tempora commodi
-                ipsa. Consequuntur illo corrupti ipsam obcaecati voluptas quos sunt
-                omnis quo aperiam corporis.
-
-                </p>
-            </div>
+                <div class="content">
+                    <h3>
+                        Nikmati Setiap <span>Gigitan</span> , Rasakan <span>Kebahagiaan</span>
+                    </h3>
+                </div>
             </section>
-                <section class="menu" id="menu">
+            <section class="menu" id="menu">
                 <h1 class="heading">Daftar <span>Restaurants</span></h1>
                 <div class="box-container"></div>
             </section>
