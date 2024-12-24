@@ -1,7 +1,6 @@
 // import defaultData from '../../../public/data/DATA.json';
 import { createMenuTemplate } from '../templates/template-creator';
 import restaurantDbSource from '../../../scripts/data/getApiRestaurants';
-
 const Home = {
     async render() {
         return `

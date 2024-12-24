@@ -1,0 +1,166 @@
+.details__container {
+    width: 100%;
+    display: flex;
+    padding: 16px 0;
+}
+  
+.details__category {
+    width: 45%;
+    justify-content:space-between;
+}
+  
+.details__rating {
+    width: 100%;
+}
+  
+.details__category {
+    .category {
+        display: inline-block;
+        background-color: #FF6F00; 
+        color: #FFF; 
+        padding: 4px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+}
+  
+.box_description {
+    font-size: 1.6rem;
+}
+  
+  /* MENU RESTORAN */
+#resto-detail-form-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #0c0c0c;
+    border-radius: 1rem;
+}
+  
+#resto-detail-form-menu {
+    span {
+        font-size: 2rem;
+        color:#eee;
+        text-transform: uppercase;
+    }
+}
+  
+.restaurant-detail__menu-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px 0;
+}
+  
+.foods, .drinks {
+    flex: 0 1 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.box {
+    h3 {
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        padding: 0 13rem ;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+  
+.restaurant-detail__foods,
+.restaurant-detail__drinks {
+    li {
+        list-style: none;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+/* Review Section */
+#resto-detail-form-review {
+    span {
+        font-size: 1.5rem; 
+        display: inline-block;
+        background-color: #030404; 
+        color: #fafaf7; 
+        padding: 1rem 2rem;
+        margin: 2px;
+        border-radius: 3rem;
+        text-transform: uppercase; 
+        text-align: center;
+    }
+}
+
+.detail-review {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+}
+  
+.detail-review-item {
+    border-top: 1px solid #FFCDD2; 
+}
+
+.detail-review-item {
+    .name-review {
+        padding: 12px 0;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+
+.header-review {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1em;
+    
+    p {
+        font-weight: 300;
+    }
+}
+
+
+.body-review {
+    font-size: 1.5rem;
+    color: #FF5722; 
+    margin-left: 20px;
+}
+
+/* Like/Unlike  */
+#likeButtonContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+    .like {
+        display: fixed;
+        align-items: center;
+        justify-content: center;
+        padding: 0 14px;
+        background-color: #ff6347;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 3.5em;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        margin-bottom: -4px;
+        width : 50px;
+        height: 50px;
+        z-index: 999;
+    }
+}
+
