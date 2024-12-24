@@ -4,14 +4,12 @@ const createMenuTemplate = (menu) => `
         <div class="box">
           <div class="box__city">${menu.city}</div>
           <picture>
-              <source class="lazyload"  media="(max-width: 500px)" data-srcset="https://restaurant-api.dicoding.dev/images/small/${menu.pictureId}">
-              <source class="lazyload" media="(max-width: 800px)" data-srcset="https://restaurant-api.dicoding.dev/images/medium/${menu.pictureId}">
-              <img class="lazyload" data-src="https://restaurant-api.dicoding.dev/images/large/${menu.pictureId}" alt="gambar ${menu.name}">
+            <source class="lazyload"  media="(max-width: 500px)" data-srcset="https://restaurant-api.dicoding.dev/images/small/${menu.pictureId}">
+            <img class="lazyload" data-src="https://restaurant-api.dicoding.dev/images/medium/${menu.pictureId}" alt="gambar ${menu.name}">
           </picture>
           <div class="box__rating">Rating : <i class="fa-solid fa-star" aria-hidden="true"></i>${menu.rating}</div>
           <div class="box__title"><a href="#/detail/${menu.id}">${menu.name}</a></div>
           <div class="box_description">${menu.description.slice(0, 100)}</div>
-        <br />
         </div>
 `;
 
@@ -50,32 +48,31 @@ const createDetailTemplate = (menu) => `
         `)
         .join('')}
     </div>
-        <label for="input-title" class="label-title">Comment</label>
-        <div class="container">
-        <form id="form-input">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">Nama</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
+    <label for="input-title" class="label-title">Comment</label>
+    <div class="container">
+      <form id="form-input">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nama</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="note">Catatan</label>
-            </div>
-            <div class="col-75">
-              <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
           </div>
-          <div class="row">
-            <button type="button" id="sent" class="btn btn-success">Kirim</button>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="note">Catatan</label>
           </div>
-        </form>
-      </div>
-      </div>
-
+          <div class="col-75">
+            <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" id="sent" class="btn btn-success">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
   <div class="box">
     <h2>ADDRESS</h2>
     <p>${menu.address}</p><br />
@@ -86,18 +83,15 @@ const createDetailTemplate = (menu) => `
       <div class="foods">
         <h3 class="bg-food">FOODS</h3>
         <ul class="restaurant-detail__foods">
-          ${menu.menus.foods
-        .map((food) => `<li><i class="fa fa-cutlery font-decoration"></i> ${food.name}</li>`)
-        .join('')}
+          ${menu.menus.foods.map((food) => `<li><i class="fa fa-cutlery font-decoration"></i> ${food.name}</li>`)
+            .join('')}
         </ul>
       </div>
-
       <div class="drinks">
         <h3 class="bg-drink">DRINKS</h3>
         <ul class="restaurant-detail__drinks">
-          ${menu.menus.drinks
-        .map((drink) => `<li><i class="fa fa-coffee font-decoration"></i> ${drink.name}</li>`)
-        .join('')}
+          ${menu.menus.drinks.map((drink) => `<li><i class="fa fa-coffee font-decoration"></i> ${drink.name}</li>`)
+            .join('')}
         </ul>
       </div>
     </div>

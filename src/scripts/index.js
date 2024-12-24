@@ -1,7 +1,8 @@
 import 'regenerator-runtime'; /* for async await transpile */
-import '../styles/main.css';
-import '../styles/responsive.css';
-import '../styles/loading.css';
+import '../styles/main.scss';
+import '../styles/responsive.scss';
+import '../styles/loading.scss';
+import '../styles/halaman-details.scss'
 import App from './views/app';
 import swRegister from './utils/sw-register';
 import 'lazysizes';

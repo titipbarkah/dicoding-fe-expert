@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./font/Poppins-Bold.ttf') format('ttf'),
+       url('./font/Poppins-Regular.ttf') format('ttf');
+}
+
+:root {
+  --orange: #ff7800;
+  --black: #0d0d0d;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: #eee;
+}
+
+main {
+  margin-top: 106px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 9999;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  border: 0.2rem solid var(--black);
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+}
+
+button:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 9%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+
+  .logo {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--black);
+    padding: -1 44px;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+      padding-top: 3px;
+      color: var(--orange);
+    }
+
+    span {
+      color: #ff7800;
+    }
+
+    i {
+      color: var(--orange);
+    }
+  }
+
+  .navbar a {
+    font-size: 20px;
+    padding: 44px;
+    color: var(--black);
+
+    &:hover {
+      color: var(--orange);
+    }
+  }
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+#menu-btn {
+  display: none;
+  
+  &:hover {
+    color: var(--orange);
+  }
+  
+}
+
+.hero {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  height: 255px;
+
+  picture {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  img, source {
+    width: 100%;
+  }
+
+  .content {
+    text-align: center;
+    width: 100%;
+    margin-top: 8rem;
+
+    h3 {
+      color: var(--black);
+      font-size: 4.5rem;
+      text-shadow: 1px 4px 3px #faf8f8;
+    }
+
+    span {
+      color: var(--orange);
+    }
+
+    p {
+      color: rgb(251, 250, 249);
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    font-size: 2.5rem;
+  }
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3.5rem;
+  color: #000;
+
+  span {
+    color: orange;
+  }
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+
+  .box {
+    padding: 3rem 3rem;
+    background: #fff;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+
+    .box__city {
+      display: inline-block;
+      position: absolute;
+      background: #ff7800;
+      font-size: 1.5rem;
+      padding: 1rem 1rem;
+      margin-left: -0.02rem;
+      margin-top: 2rem;
+      border-radius: 0 7px 7px 0;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .box__city_detail {
+      display: inline-block;
+      position: absolute;
+      background: #ff7800;
+      font-size: 1.5rem;
+      padding: 1rem 1rem;
+      margin-left: -0.02rem;
+      border-radius: 0 7px 7px 0;
+      box-shadow: var(--box-shadow);
+      top: 10px;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+
+    img:hover {
+      opacity: 0.8;
+      transform: scale(1.01);
+      cursor: pointer;
+    }
+
+    .box__rating {
+      color: var(--orange);
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    .box__title {
+      font-size: 32px;
+    }
+
+    .image__container {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+
+footer {
+  font-family: Arial;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0;
+  background-color: #fff;
+  font-size: 17px;
+}
+
+/* Form Reviewer */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.label-title {
+  font-size: 2rem;
+}
+
+/* Style the submit button */
+.btn-success {
+  background-color: #FF6F00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
