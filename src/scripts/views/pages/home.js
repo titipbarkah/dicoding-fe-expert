@@ -14,6 +14,10 @@ const Home = {
                     <h3>
                         Nikmati Setiap <span>Gigitan</span> , Rasakan <span>Kebahagiaan</span>
                     </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sunt fugit ipsum ea voluptates mollitia, odit vel. 
+                        Fugit magnam, saepe rerum iusto cum quia illum quis quod consequuntur, delectus ratione!
+                    </p>
                 </div>
             </section>
             <section class="menu" id="menu">

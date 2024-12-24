@@ -11,15 +11,18 @@ const Details = {
     async render() {
         return `
             <section class="hero" id="hero">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./public/images/heros/hero-image_2-small.webp">
+                    <source media="(max-width: 800px)" srcset="./public/images/heros/hero-image_2-medium.webp">
+                    <img src="./public/images/heros/hero-image_2-large.webp" alt="">
+                </picture>
                 <div class="content">
                     <h3>
                         Nikmati Setiap <span>Gigitan</span> , Rasakan <span>Kebahagiaan</span>
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                        reiciendis ipsam fugiat praesentium, porro accusantium tempora commodi
-                        ipsa. Consequuntur illo corrupti ipsam obcaecati voluptas quos sunt
-                        omnis quo aperiam corporis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sunt fugit ipsum ea voluptates mollitia, odit vel. 
+                        Fugit magnam, saepe rerum iusto cum quia illum quis quod consequuntur, delectus ratione!
                     </p>
                 </div>
             </section>
