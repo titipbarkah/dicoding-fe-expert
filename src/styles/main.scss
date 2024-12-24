@@ -211,6 +211,7 @@ button:hover {
   gap: 1.5rem;
 
   .box {
+    min-height: 299;
     padding: 3rem 3rem;
     background: #fff;
     outline: var(--outline);
@@ -261,7 +262,13 @@ button:hover {
     }
     
     .box__title {
-      font-size: 32px;
+      font-size: 22px;
+
+      a {
+        display: block;
+        width: 100%;
+        min-height: 44px;
+      }
     }
 
     .image__container {
