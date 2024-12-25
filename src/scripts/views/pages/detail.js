@@ -34,16 +34,16 @@ const Details = {
         `;
     },
     _hideLoading() {
-        this.loadingIndicator.style.display = 'none'
-      },
-    
-      _showLoading() {
-        this.loadingIndicator.style.display = 'block'
-      },
+        this.loadingIndicator.style.display = 'none';
+    },
+
+    _showLoading() {
+        this.loadingIndicator.style.display = 'block';
+    },
 
     async afterRender() {
-        this.loadingIndicator = document.querySelector('.loader')
-        this._showLoading()
+        this.loadingIndicator = document.querySelector('.loader');
+        this._showLoading();
         // Fungsi ini akan dipanggil setelah render()
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const APP_RESTAURANTS = await restaurantDbSource.detailRestaurants(url.id);
@@ -52,7 +52,7 @@ const Details = {
 
         LikeButtonPresenter.init({
             likeButtonContainer: document.querySelector('#likeButtonContainer'),
-            favoriteRestaurants: FavoriteRestaurantIdb, 
+            favoriteRestaurants: FavoriteRestaurantIdb,
             restaurant: {
                 id: APP_RESTAURANTS.id,
                 name: APP_RESTAURANTS.name,
@@ -64,12 +64,12 @@ const Details = {
         });
 
 
-        document.querySelector("#form-input").querySelector("button").onclick = async (event) => {
+        document.querySelector('#form-input').querySelector('button').onclick = async (event) => {
             event.preventDefault();
 
-            console.log("test")
-            const name = document.querySelector("#fname").value;
-            const review = document.querySelector("#comment").value;
+            console.log('test');
+            const name = document.querySelector('#fname').value;
+            const review = document.querySelector('#comment').value;
             const reviewObj = {
                 id: url.id,
                 name,
@@ -83,7 +83,7 @@ const Details = {
 
             LikeButtonPresenter.init({
                 likeButtonContainer: document.querySelector('#likeButtonContainer'),
-                favoriteRestaurants: FavoriteRestaurantIdb, 
+                favoriteRestaurants: FavoriteRestaurantIdb,
                 restaurant: {
                     id: APP_RESTAURANTS.id,
                     name: APP_RESTAURANTS.name,
@@ -93,12 +93,11 @@ const Details = {
                     rating: APP_RESTAURANTS.rating,
                 },
             });
-            return false
-        }
-        this._hideLoading()
+            return false;
+        };
+        this._hideLoading();
         console.log('Initializing Like Button...');
     },
-    
 };
 
 export default Details;

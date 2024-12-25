@@ -23,10 +23,11 @@ class RestaurantDbSource {
                 'Content-Type': 'application/json',
             },
             body:JSON.stringify(data),
-        }
-        const response = await fetch(API_ENDPOINT.REVIEW_RESTAURANTS, options)
-        const responseJson = await response.json()
-        }
+        };
+        const response = await fetch(API_ENDPOINT.REVIEW_RESTAURANTS, options);
+        // eslint-disable-next-line no-unused-vars
+        const responseJson = await response.json();
     }
+}
 
 export default RestaurantDbSource;

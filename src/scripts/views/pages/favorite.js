@@ -28,23 +28,22 @@ const Favorite = {
       `;
     },
     _hideLoading() {
-        this.loadingIndicator.style.display = 'none'
-      },
-    
-      _showLoading() {
-        this.loadingIndicator.style.display = 'block'
-      },
+        this.loadingIndicator.style.display = 'none';
+    },
+    _showLoading() {
+        this.loadingIndicator.style.display = 'block';
+    },
 
     async afterRender() {
-        this.loadingIndicator = document.querySelector('.loader')
-        this._showLoading()
+        this.loadingIndicator = document.querySelector('.loader');
+        this._showLoading();
         // Fungsi ini akan dipanggil setelah render()
         const APP_RESTAURANTS = await FavoriteRestaurantIdb.getAllFavorite();
         const menusContainer = document.querySelector('.box-container');
         APP_RESTAURANTS.forEach((menu) => {
             menusContainer.innerHTML += createMenuTemplate(menu);
         });
-        this._hideLoading()
+        this._hideLoading();
     },
 };
 
