@@ -28,19 +28,19 @@ const Home = {
         `;
     },
 
-      _hideLoading() {
-        this.loadingIndicator.style.display = 'none'
-      },
-    
-      _showLoading() {
-        this.loadingIndicator.style.display = 'block'
-      },
+    _hideLoading() {
+        this.loadingIndicator.style.display = 'none';
+    },
+
+    _showLoading() {
+        this.loadingIndicator.style.display = 'block';
+    },
 
     async afterRender() {
         setTimeout(() => {
-            this.loadingIndicator = document.querySelector('.loader')
+            this.loadingIndicator = document.querySelector('.loader');
             this._showLoading()
-        , 3000})
+            , 3000; });
 
         // Fungsi ini akan dipanggil setelah render()
         const APP_RESTAURANTS = await restaurantDbSource.homeRestaurants();
@@ -48,7 +48,7 @@ const Home = {
         APP_RESTAURANTS.forEach((menu) => {
             menusContainer.innerHTML += createMenuTemplate(menu);
         });
-        this._hideLoading()
+        this._hideLoading();
     },
 };
 

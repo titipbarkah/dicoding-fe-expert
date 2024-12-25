@@ -84,14 +84,14 @@ const createDetailTemplate = (menu) => `
         <h3 class="bg-food">FOODS</h3>
         <ul class="restaurant-detail__foods">
           ${menu.menus.foods.map((food) => `<li><i class="fa fa-cutlery font-decoration"></i> ${food.name}</li>`)
-            .join('')}
+        .join('')}
         </ul>
       </div>
       <div class="drinks">
         <h3 class="bg-drink">DRINKS</h3>
         <ul class="restaurant-detail__drinks">
           ${menu.menus.drinks.map((drink) => `<li><i class="fa fa-coffee font-decoration"></i> ${drink.name}</li>`)
-            .join('')}
+        .join('')}
         </ul>
       </div>
     </div>
